@@ -1,3 +1,7 @@
+{% load static %}
+{% comment %}The {% static %} template tag generates the absolute URL of static files.{% endcomment %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
